@@ -3,3 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  padding: 20px 120px;
+}
+
+header {
+  text-align: center;
+}
+
+.imageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  border: 1px gray solid;
+  border-radius: 0.5rem;
+  margin-block: 1rem;
+  padding: 0.5rem;
+  height: 80vh;
+  overflow: auto;
+}
+
+.imageGallery img {
+  max-width: 30%;
+  min-width: 10rem;
+  object-fit: cover;
+  object-position: center;
+}

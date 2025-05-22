@@ -1,11 +1,10 @@
 .fullWidthImage {
-  background-image: url(images/manga\ edits.jpeg);
+  background-image: url(../images/manga\ edits.jpeg);
   background-position: center;
   background-size: cover;
 
   width: 100;
   height: 80vh;
-  margin-block: -20px 5rem;
   margin-inline: -120px;
   padding-inline: 120px;
 }

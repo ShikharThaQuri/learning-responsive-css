@@ -1,15 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  padding: 20px 120px;
+.imageGallerySection {
+  background-color: brown;
+  margin: 0 -120px;
+  padding: 6rem 120px;
 }
 
 header {
   text-align: center;
+  font-size: 1.5rem;
+  margin-block: 2rem;
 }
 
 .imageGallery {
@@ -18,11 +16,11 @@ header {
   justify-content: center;
   gap: 1rem;
 
-  border: 1px gray solid;
+  background-color: white;
+  border: 1px none solid;
   border-radius: 0.5rem;
-  margin-block: 1rem;
-  padding: 0.5rem;
-  height: 80vh;
+  padding: 1.5rem 0.5rem;
+  height: 70vh;
   overflow: auto;
 }
 

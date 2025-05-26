@@ -1,5 +1,5 @@
 .imageGallerySection {
-  background-color: brown;
+  background-color: #252422;
   margin: 0 -120px;
   padding: 6rem 120px;
 }
@@ -16,7 +16,7 @@ header {
   justify-content: center;
   gap: 1rem;
 
-  background-color: white;
+  background-color: #adb5bd;
   border: 1px none solid;
   border-radius: 0.5rem;
   padding: 1.5rem 0.5rem;

@@ -1,10 +1,86 @@
-.fullWidthImage {
-  background-image: url(../images/manga\ edits.jpeg);
-  background-position: center;
-  background-size: cover;
+.scrollTracker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0.5rem;
 
+  background: #ffffff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(57, 46, 209, 1) 38%,
+    rgba(237, 83, 83, 1) 100%
+  );
+
+  scale: 0 1;
+  animation: scrollWatcher linear;
+  animation-timeline: scroll();
+  transform-origin: left;
+}
+
+@keyframes scrollWatcher {
+  to {
+    scale: 1 1;
+  }
+}
+
+.fullWidthImage {
   width: 100;
-  height: 80vh;
+  height: 90vh;
   margin-inline: -120px;
-  padding-inline: 120px;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullWidthImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+
+  animation: nightFurryImageZoom linear;
+  animation-timeline: view();
+  animation-range: exit;
+}
+
+.nightFurryName {
+  position: absolute;
+  bottom: 15%;
+  text-align: center;
+  line-height: 5rem;
+
+  animation: nightFurryFade-Out linear;
+  animation-timeline: view();
+  animation-range: exit -20rem;
+}
+.fullWidthImage h1 {
+  font-size: 6rem;
+}
+.fullWidthImage p {
+  font-size: 1.3rem;
+  color: #ced4da;
+}
+
+@keyframes nightFurryFade-Out {
+  25% {
+    opacity: 1;
+    color: #8ac926;
+  }
+
+  85%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nightFurryImageZoom {
+  to {
+    scale: 2;
+  }
 }

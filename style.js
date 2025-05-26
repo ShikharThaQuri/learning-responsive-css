@@ -4,8 +4,8 @@ const image3 = document.getElementById("image3");
 const image4 = document.getElementById("image4");
 const image5 = document.getElementById("image5");
 
-const imgs = document.querySelectorAll("imgs");
-const gallery = document.getElementById("gallery");
+// const imgs = document.querySelectorAll("imgs");
+// const gallery = document.getElementById("gallery");
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -24,7 +24,7 @@ const observer = new IntersectionObserver(
         image5.classList.remove("image5");
       }
 
-      if (entry.isIntersecting) observer.unobserve(entry.target);
+      // if (entry.isIntersecting) observer.unobserve(entry.target);
     });
   },
   {
@@ -34,16 +34,16 @@ const observer = new IntersectionObserver(
 
 observer.observe(image1);
 
-image1.onclick = () => {
-  gallery.style.overflow = "auto";
-  imgs.forEach((imgName) => {
-    imgName.style.position = "none";
-    imgName.style.height = "auto";
-  });
+// image1.onclick = () => {
+//   gallery.style.overflow = "auto";
+//   imgs.forEach((imgName) => {
+//     imgName.style.position = "none";
+//     imgName.style.height = "auto";
+//   });
 
-  image1.classList.remove("image1");
-  image2.classList.remove("image2");
-  image3.classList.remove("image3");
-  image4.classList.remove("image4");
-  image5.classList.remove("image5");
-};
+//   image1.classList.remove("image1");
+//   image2.classList.remove("image2");
+//   image3.classList.remove("image3");
+//   image4.classList.remove("image4");
+//   image5.classList.remove("image5");
+// };

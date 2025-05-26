@@ -7,7 +7,7 @@
 header {
   text-align: center;
   font-size: 1.5rem;
-  margin-block: 2rem;
+  margin-block: 0 5rem;
 }
 
 .imageGallery {
@@ -16,17 +16,42 @@ header {
   justify-content: center;
   gap: 1rem;
 
-  background-color: #adb5bd;
-  border: 1px none solid;
-  border-radius: 0.5rem;
-  padding: 1.5rem 0.5rem;
-  height: 70vh;
-  overflow: auto;
+  height: 20rem;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: 1.25s;
 }
 
-.imageGallery img {
-  max-width: 30%;
+.imgs {
+  max-width: 20%;
   min-width: 10rem;
   object-fit: cover;
   object-position: center;
+
+  position: absolute;
+  height: 100%;
+
+  transition: 1.25s;
+}
+
+.image1 {
+  z-index: 5;
+}
+.image2 {
+  transform: rotate(25deg) translateX(3.65rem) translateY(-1.3rem);
+  z-index: 4;
+}
+.image3 {
+  transform: rotate(40deg) translateX(4.8rem) translateY(-2.5rem);
+  z-index: 3;
+}
+.image4 {
+  transform: rotate(-25deg) translateX(-3.65rem) translateY(-1.3rem);
+  z-index: 2;
+}
+.image5 {
+  transform: rotate(-40deg) translateX(-4.7rem) translateY(-2.5rem);
+  z-index: 1;
 }

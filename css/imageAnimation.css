@@ -5,6 +5,7 @@
   right: 0;
   width: 100%;
   height: 0.5rem;
+  z-index: 50;
 
   background: #ffffff;
   background: linear-gradient(
@@ -27,9 +28,9 @@
 }
 
 .fullWidthImage {
-  width: 100;
   height: 90vh;
   margin-inline: -120px;
+  overflow-x: clip;
 
   color: white;
   display: flex;
@@ -44,7 +45,9 @@
   object-position: center;
   z-index: -1;
 
-  animation: nightFurryImageZoom linear;
+  transform-origin: center;
+
+  animation: nightFurryImageZoom linear forwards;
   animation-timeline: view();
   animation-range: exit;
 }

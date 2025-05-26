@@ -6,7 +6,7 @@
     <title>Responsive-Css</title>
 
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fullWidthImage.css" />
+    <link rel="stylesheet" href="/css/imageAnimation.css" />
     <link rel="stylesheet" href="/css/infiniteScroll.css" />
     <link rel="stylesheet" href="/css/responsiveImageGallery.css" />
   </head>
@@ -30,15 +30,40 @@
     <div class="imageGallerySection">
       <header><mark>Image Gallery</mark></header>
 
-      <div class="imageGallery">
-        <img src="images/Anime architecture drawing.jpeg" alt="first Image" />
-        <img src="images/Cool anime backgrounds.jpeg" alt="first Image" />
-        <img src="images/DeLorean DMC-12.jpeg" alt="first Image" />
-        <img src="images/different art my art.jpeg" alt="first Image" />
-        <img src="images/download (2).jpeg" alt="first Image" />
-        <img src="images/download (4).jpeg" alt="first Image" />
-        <img src="images/download (5).jpeg" alt="first Image" />
-        <img src="images/download (6).jpeg" alt="first Image" />
+      <div id="gallery" class="imageGallery">
+        <img class="imgs" src="images/download (4).jpeg" alt="first Image" />
+        <img class="imgs" src="images/download (5).jpeg" alt="first Image" />
+        <img class="imgs" src="images/download (6).jpeg" alt="first Image" />
+        <img
+          class="imgs"
+          id="image5"
+          src="images/Cool anime backgrounds.jpeg"
+          alt="first Image"
+        />
+        <img
+          class="imgs"
+          id="image4"
+          src="images/different art my art.jpeg"
+          alt="first Image"
+        />
+        <img
+          class="imgs"
+          id="image3"
+          src="images/DeLorean DMC-12.jpeg"
+          alt="first Image"
+        />
+        <img
+          class="imgs"
+          id="image2"
+          src="images/Anime architecture drawing.jpeg"
+          alt="first Image"
+        />
+        <img
+          class="imgs"
+          id="image1"
+          src="images/download (2).jpeg"
+          alt="first Image"
+        />
       </div>
     </div>
 
@@ -53,5 +78,7 @@
         <div class="item item5"></div>
       </div>
     </div>
+
+    <script src="style.js"></script>
   </body>
 </html>

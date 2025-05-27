@@ -14,12 +14,13 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 
-  height: 20rem;
+  height: 40rem;
 
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
 
   transition: 1.25s;
 }
@@ -30,28 +31,42 @@ header {
   object-fit: cover;
   object-position: center;
 
-  position: absolute;
-  height: 100%;
+  /* position: absolute; */
+  height: 20rem;
 
   transition: 1.25s;
 }
 
 .image1 {
-  z-index: 5;
+  transform: translateX(-160%) translateY(-50%);
+  z-index: 8;
 }
 .image2 {
-  transform: rotate(25deg) translateX(3.65rem) translateY(-1.3rem);
-  z-index: 4;
+  transform: translateX(-54%) translateY(-50%);
+  z-index: 7;
 }
 .image3 {
-  transform: rotate(40deg) translateX(4.8rem) translateY(-2.5rem);
-  z-index: 3;
+  transform: translateX(52.7%) translateY(-50%);
+  z-index: 6;
 }
 .image4 {
-  transform: rotate(-25deg) translateX(-3.65rem) translateY(-1.3rem);
+  transform: translateX(159%) translateY(-50%);
+  z-index: 5;
+}
+
+.image5 {
+  transform: translateX(-160%) translateY(55%);
+  z-index: 4;
+}
+.image6 {
+  transform: translateX(-54%) translateY(55%);
+  z-index: 3;
+}
+.image7 {
+  transform: translateX(52.7%) translateY(55%);
   z-index: 2;
 }
-.image5 {
-  transform: rotate(-40deg) translateX(-4.7rem) translateY(-2.5rem);
+.image8 {
   z-index: 1;
+  transform: translateX(159%) translateY(55%);
 }
